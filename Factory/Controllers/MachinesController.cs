@@ -19,7 +19,7 @@ namespace Factory.Controllers
       var thisMachine = _db.Machines
           .Include(machine => machine.Engineers)
           .ThenInclude(join => join.Engineer)
-          .FirstOrDefault(machine => machine.machineId == id);
+          .FirstOrDefault(machine => machine.MachineId == id);
       return View(thisMachine);
     }
     public ActionResult Create()
@@ -91,7 +91,7 @@ namespace Factory.Controllers
       _db.Machines.Add(machine);
     if (EngineerId != 0)
     {
-        _db.EngineerMachine.Add(new EngineerMachine() { EngineerId = EngineerId, MachinrId = machine.MachineId });
+        _db.EngineerMachine.Add(new EngineerMachine() { EngineerId = EngineerId, MachineId = machine.MachineId });
     }
     _db.SaveChanges();
     return RedirectToAction("Index");

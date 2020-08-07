@@ -1,0 +1,37 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Machine
+
+<h2>Machine Details</h2>
+<hr />
+<h3>Name: @Html.DisplayFor(model => model.Name)</h3>
+<h3>
+
+
+@if(@Model.Engineers.Count == 0)
+{
+  <p>This machine has no engineers currently assigned to it.</p>
+}
+else
+{
+  <h4>The Engineers assigned to this machine:</h4>
+  <ul>
+  @foreach(var join in Model.Engineers)
+  {
+    <li>@join.Engineer.Name</li>
+    @using (Html.BeginForm("DeleteEngineer", "Machines"))
+    {
+      @Html.Hidden("joinId", @join.EngineerMachineId)
+      <input type="submit" value="Delete"/>
+    }
+  }
+  </ul>
+}
+
+<input type="button" value="Return Home" onclick="location.href='@Url.Action("Index", "Home")';" class="btn btn-warning" />
+<input type="button" value="Edit Machine" onclick="location.href='@Url.Action("Edit", "Machines", new { id = Model.MachineId })';" class="btn btn-warning" />
+<input type="button" value="Delete Machine" onclick="location.href='@Url.Action("Delete", "Machines", new { id = Model.MachineId })';" class="btn btn-warning" />
+<input type="button" value="Add a Engineer" onclick="location.href='@Url.Action("AddEngineer", "Machines", new { id = Model.MachineId })';" class="btn btn-warning" />
+<input type="button" value="Back to list" onclick="location.href='@Url.Action("Index", "Machines")';" class="btn btn-warning" />
