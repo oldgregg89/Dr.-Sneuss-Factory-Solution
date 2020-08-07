@@ -33,7 +33,7 @@ in the terminal
 * Make suere to have your `MySQLWorkbench` open
 * run 
 `dotnet ef migrations add Initial`
-`dotnet ef database update`
+then `dotnet ef database update`
 * if everything looks correct you should see this as the home page: 
 ![Home-page](Assets/HomePage.png)
 

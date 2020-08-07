@@ -21,7 +21,7 @@ namespace Factory.Migrations
                     b.Property<int>("EngineerId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("License");
+                    b.Property<string>("License");
 
                     b.Property<string>("Name");
 
