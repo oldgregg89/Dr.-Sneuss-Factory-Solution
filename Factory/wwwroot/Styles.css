@@ -1,7 +1,7 @@
 body {
   background-image: url(https://images.pexels.com/photos/3785929/pexels-photo-3785929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: center;
-  background-size: cover;
+  background-size: 2200px 1500px;
   background-repeat: no-repeat;
   background-color: black;
   position: relative; 
@@ -12,12 +12,12 @@ body {
 .container {
   background-color: rgb(66, 65, 65);
   color:  goldenrod;
-  opacity: 85%;
+  opacity: 90%;
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 20px;
   border-radius: 15px;
-  border-style: solid;
+  border-style: ridge;
 }
