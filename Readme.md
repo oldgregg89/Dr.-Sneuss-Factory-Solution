@@ -2,13 +2,13 @@
 
 # _Dr. Sneuss' Factory_ 
 </strong></h1>
-![]()
+![Happy Factory](https://media.giphy.com/media/10aADbYxnJlc9q/giphy.gif)
 <h1 align="center">
 
 #### _Welcome to Dr. Sneuss' Factory Engineer & Machine Tracker using C# & many to many relationships, 2020 ver 1.0_
 
 #### By _Ian Gregg_
-[]()
+[Dr-Sneuss-Factory](https://github.com/oldgregg89/Dr.-Sneuss-Factory-Solution)
 
 ## Description
 
