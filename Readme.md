@@ -30,15 +30,22 @@ in the terminal
 * add a file called `appsetting.json` in the Factory directory.
 * in `appsetting.json` add ![appsetting.json](Assets/setup.png)
 * fill in your `server`, `port`,`database`,`uid`, and `pwd`
+* Make suere to have your `MySQLWorkbench` open
+* run 
+`dotnet ef migrations add Initial`
+`dotnet ef database update`
 * if everything looks correct you should see this as the home page: 
-![Home-page]()
+![Home-page](Assets/HomePage.png)
 
 __
 
 ## Specs
 
 | Behavior    | Input | Output |
-| :---------- | ----- | -----: |
+| Machine list | `click` Machine List | `displays` Machine List |
+| Edit Machine | `click` Edit Machine | `displays` Edit machine details|
+| Delete Machine | `click` Delete Machine | `displays` delete menu |
+
 
 
 
@@ -52,7 +59,7 @@ _Contact Ian Gregg: <iangregg188@gmail.com>_
 
 ## Technologies Used
 
-_The Technologies used in the making of this software was Chrome browser, Visual Studio editor, and Mac, C#, .Net_
+_The Technologies used in the making of this software was Chrome browser, Visual Studio editor, and Mac, C#, .Net, MySQLWorkbench_
 
 ### License
 
