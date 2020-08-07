@@ -1,0 +1,21 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer
+
+<h1>Add New Engineer</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+
+    @Html.LabelFor(model => model.License)
+    @Html.TextBoxFor(model => model.License)
+
+    <input type="submit" value="Add new engineer" class="btn btn-default" />
+}
+
+<input type="button" value="Engineer List" onclick="location.href='@Url.Action("Index", "Engineers")';" class="btn btn-primary" />
+<input type="button" value="Return Home" onclick="location.href='@Url.Action("Index", "Home")';" class="btn btn-primary" />

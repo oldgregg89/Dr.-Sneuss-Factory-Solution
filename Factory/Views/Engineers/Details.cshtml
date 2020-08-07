@@ -1,0 +1,31 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer;
+
+<h2>Engineer Details</h2>
+<hr />
+<h3>@Html.DisplayFor(model => model.Name)</h3>
+<h3>@Html.DisplayFor(model => model.License)</h3>
+
+@if(@Model.Machines.Count == 0)
+{
+  <p>No Machines assigned to this Engineer</p>
+}
+else
+{
+  <div class="well">
+      <h4 class="col-sm-3">Currently assigned Machines:</h4>
+      <ul>
+      @foreach(var join in Model.Machines)
+      {
+        <li class="col-sm-9">@join.Machine.Name</li>
+      }
+      </ul>
+  </div>
+}
+<input type="button" value="Edit Engineer" onclick="location.href='@Url.Action("Edit", "Engineers", new { id = Model.EngineerId })';" class="btn btn-primary" />
+<input type="button" value="Delete Engineer" onclick="location.href='@Url.Action("Delete", "Engineers", new { id = Model.EngineerId })';" class="btn btn-primary" />
+<input type="button" value="Engineer List" onclick="location.href='@Url.Action("Index", "Engineers")';" class="btn btn-primary" />
+<input type="button" value="Return Home" onclick="location.href='@Url.Action("Index", "Home")';" class="btn btn-primary" />
