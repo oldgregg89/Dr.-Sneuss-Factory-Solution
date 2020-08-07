@@ -42,6 +42,7 @@ __
 ## Specs
 
 | Behavior    | Input | Output |
+| :---------- | ----- | -----: |
 | Machine list | `click` Machine List | `displays` Machine List |
 | Edit Machine | `click` Edit Machine | `displays` Edit machine details|
 | Delete Machine | `click` Delete Machine | `displays` delete menu |
