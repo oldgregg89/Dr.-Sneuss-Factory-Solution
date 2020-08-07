@@ -73,6 +73,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 ## Remember you can always reach out to the editor if this doesn't make sense.
 ![Monkey reading](https://media.giphy.com/media/SiMcadhDEZDm93GmTL/giphy.gif)
 
+Also on a parting note don't click the [link](https://www.youtube.com/watch?v=maAFcEU6atk)
 
+you clicked the link didn't you...
 
 </h1>
