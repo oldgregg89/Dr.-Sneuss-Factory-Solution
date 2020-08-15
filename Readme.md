@@ -30,14 +30,15 @@ in the terminal
 * add a file called `appsetting.json` in the Factory directory.
 * in `appsetting.json` add ![appsetting.json](Assets/setup.png)
 Template: 
-
+```
 {
   
     "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=`your port number`;database=`your database`;uid=root;pwd=`password`;"
+      "DefaultConnection": "Server=localhost;Port=your port number;database=your database;uid=root;pwd=password;"
     }
 
 }
+```
 * fill in your `server`, `port`,`database`,`uid`, and `pwd`
 * Make suere to have your `MySQLWorkbench` open
 * run 
